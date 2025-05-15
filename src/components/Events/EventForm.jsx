@@ -36,7 +36,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
       {isError && <ErrorBlock title="Failed to load selectable images" message="Please try again later." />}
       {data && (
         <div className="control">
-          <ImagePicker images={[data]} onSelect={handleSelectImage} selectedImage={selectedImage} />
+          <ImagePicker images={data} onSelect={handleSelectImage} selectedImage={selectedImage} />
         </div>
       )}
 
